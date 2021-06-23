@@ -4,12 +4,46 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>moss | UX/UI Designer</title>
-	<link rel="stylesheet" href="../css/main.css"> 
+	<link rel="stylesheet" href="../css/moss.css"> 
 	</head>
 
 	<body>
-	
-	<h1>moss</h1>
-	
+		
+		<div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">about</a></li>
+					<li><a href="#">work</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+				<img id="nav-exit" class="nav-exit" src="images/exit.svg" alt="Close Navigation" onClick="closeMenu()">
+			</nav>
+			<img id="nav-open" class="nav-open" src="images/menu.svg" alt="Open Navigation" onClick="openMenu()">
+		</div>
+		
+		<div>
+		
+			<svg width="100%" id="logo" data-name="logo" fill="none" stroke="#88B783" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1068.75 247.96">
+			  
+				<path d="M180.9,286.33l2,26.63q25.31-31,68.45-31,46,0,63.18,36.32,25.08-36.32,71.53-36.32,38.74,0,57.67,22.57t18.93,67.9V524.48H398.81V372.61q0-20.25-7.93-29.61t-27.95-9.35q-28.62,0-39.62,27.29l.22,163.54H259.92V372.83q0-20.68-8.15-29.94T224,333.65q-27.07,0-39.18,22.45V524.48H121.25V286.33Z" transform="translate(-120.75 -281.42)"/>
+				<path d="M501.6,403.2q0-35.43,13.65-63.17t39.29-42.92q25.63-15.18,59.53-15.19,48.21,0,78.69,29.5t34,80.12l.44,16.29q0,54.8-30.59,87.93t-82.11,33.13q-51.5,0-82.21-33t-30.7-89.8Zm63.61,4.52q0,33.94,12.77,51.91t36.53,18q23.12,0,36.1-17.75t13-56.76q0-33.29-13-51.58t-36.54-18.3q-23.33,0-36.09,18.19T565.21,407.72Z" transform="translate(-120.75 -281.42)"/>
+				<path d="M895.37,458.67q0-11.67-11.55-18.38t-37.09-12q-85-17.83-85-72.2,0-31.69,26.3-52.94t68.79-21.24q45.33,0,72.52,21.35t27.18,55.47H893q0-13.65-8.8-22.56t-27.51-8.91q-16.08,0-24.88,7.26A22.93,22.93,0,0,0,823,353q0,10.56,10,17.06t33.79,11.22Q890.54,386,906.82,392q50.4,18.48,50.4,64,0,32.58-28,52.72t-72.19,20.14q-29.94,0-53.16-10.68t-36.43-29.27q-13.2-18.6-13.21-40.17h60.31q.88,17,12.55,26t31.26,9q18.27,0,27.62-6.93T895.37,458.67Z" transform="translate(-120.75 -281.42)"/>
+				<path d="M1127.15,458.67q0-11.67-11.56-18.38t-37.08-12q-85-17.83-85-72.2,0-31.69,26.31-52.94t68.78-21.24q45.34,0,72.53,21.35t27.18,55.47h-63.61q0-13.65-8.81-22.56t-27.51-8.91q-16.07,0-24.87,7.26a22.94,22.94,0,0,0-8.81,18.49q0,10.56,10,17.06t33.79,11.22q23.76,4.74,40,10.68Q1189,410.46,1189,456q0,32.58-28,52.72t-72.2,20.14q-29.94,0-53.16-10.68t-36.42-29.27q-13.21-18.6-13.21-40.17h60.31q.87,17,12.55,26t31.25,9q18.27,0,27.62-6.93T1127.15,458.67Z" transform="translate(-120.75 -281.42)"/>
+			  
+			</svg>
+			
+		</div>
+	<script src="scripts/app.js"></script>
+	<script>
+		var menu = document.getElementById("menu");
+		
+		function closeMenu(){
+			menu.style.top = "-100vh";
+		}
+		
+		function openMenu(){
+			menu.style.top = "0";
+		}
+	</script>
 	</body>
 </html>
