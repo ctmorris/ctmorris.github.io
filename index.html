@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Corporeal Abstract</title>
+	<link rel="stylesheet" href="css/main.css"> 
+	</head>
+
+	<body>
+		<div class="navbar">
+			
+			<div class="container">
+				<a class="logo" href="index.html">Corporeal<span>Abstract</span></a>
+				
+				<img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+				
+				<nav>
+					<img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+					
+					<ul class="primary-nav">
+						<li><a href="#products">products</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#contact">contact</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+		</div>
+		
+		<section class="hero-section">
+			
+				<div class="container">
+					
+				<div class="left-col">
+					<p class="subhead">the <span>ether</span>eal made <span>real</span></p>
+					<h1>Software that matches your wetware.</h1>
+				
+					<div class="hero-cta">
+						<a href="#products" class="primary-cta">Say what?</a>
+					</div>
+					
+					<!--<img src="images/scuba.jpg" class="hero-img" alt="img">-->
+				</div>
+				
+			</div>
+		</section>
+		
+		<section id="products" class="products-section">
+			<div class="container">
+				<h2>Products</h2>
+				
+				<ul class="products-list">
+					<li><a href="/medical.html">Medical Solutions</a></li>
+					<li><a href="/ux_ui.html">UX / UI</a></li>
+					<li><a href="/games.html">Illustration</a></li>
+					<li><a href="/games.html">Employee App Solutions</a></li>
+					<li><a href="/games.html">Intranet Solutions</a></li>
+					<li><a href="/games.html">Games</a></li>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="about" class="about-section">
+			<div class="container">
+				<h2>About Us</h2>
+				
+				<ul>
+					<li class="us">
+						<img src="images/scuba.jpg" alt="Nate Grigg. Founder / CTO">
+						
+						<blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    	<cite>- Nate Grigg<br>Founder / CTO?</cite>
+					</li>
+					<li class="us">
+						<img src="images/moss.jpg" alt="Moss Morris. Founder / Creative Director">
+						
+						<blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    	<cite>- Moss Morris<br>Founder / Creative Director?</cite>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="contact" class="contact-section">
+			<div class="container">
+				<div class="contact-left">
+					<h2>Contact</h2>
+					
+					<form action="">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name">
+						
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email">
+						
+						<label for="message">Message</label>
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						
+						<input type="submit" class="send-message-cta" value="send message">
+					</form>
+				</div>
+				
+				<div class="contact-right">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96682.81024286564!2d-111.99052451636406!3d40.7765867777766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87523d9488d131ed%3A0x5b53b7a0484d31ca!2sSalt%20Lake%20City%2C%20UT!5e0!3m2!1sen!2sus!4v1624127828604!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</section>
+		
+		<section id="footer" class="footer-section">
+			<div class="container">
+				<a class="logo" href="index.html">Corporeal<span>Abstract</span></a>
+			</div>
+		</section>
+		
+	<script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+	</script>
+		
+	</body>
+</html>

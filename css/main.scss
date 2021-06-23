@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,400;0,500;1,100;1,400;1,500&display=swap');
+
+:root {
+	--primary-color: #CAB000;
+	--text-color: #CCCCCC;
+}
+
+body, html {
+	height: 100%;
+	background: #333333;
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+}
+
+.navbar {
+    background: #222222;
+    padding: 1em;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+
+    .logo {
+        text-decoration: none;
+        font-weight: 100;
+        color: #CCCCCC;
+        font-size: 1.2em;
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+		float: right;
+		margin-right: 2.5em;
+    }
+}
+
+nav.menu-btn {
+	display: block;
+}
+
+nav {
+	position: fixed;
+	z-index: 999;
+	width: 40%;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	background: #CAB000;
+	padding: 1em;
+	opacity: 0.99;
+	
+	ul.primary-nav {
+		margin-top: 5em;
+	}
+	
+	li {
+        
+        a {
+            color: #333333;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+a {
+	color: var(--primary-color);
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	padding: 5em 2em;
+}
+
+section.hero-section {
+	text-align: center;
+	background: url('../images/penroseSvg.svg');
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: 200%;
+}
+
+
+.left-col {
+	
+	.subhead {
+		text-transform: uppercase;
+		font-weight: 500;
+		color: var(--text-color);
+		font-size: 1.2em;
+		
+		span {
+			color: var(--primary-color);
+		}
+	}
+	
+	h1 {
+		color: var(--text-color);
+		font-size: 3em;
+		line-height: 1.2em;
+		margin-top: .2em;
+	}
+
+	.primary-cta {
+        background: var(--primary-color);
+        color: #333333;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 5em;
+        font-weight: 500;
+        display: inline-block;
+    }
+
+}
+
+.hero-img {
+	width: 70%;
+	margin: 3em;
+	border-radius: 5em;
+}
+
+section.products-section {
+	background: #222222;
+	
+	h2 {
+		text-align: center;
+		color: var(--text-color);
+		font-size: 2em;
+	}
+}
+
+ul.products-list {
+	margin: 0;
+	padding-left: .1em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+	
+	li {
+		font-size: 1em;
+		margin-bottom: 1em;
+		margin-left: 2em;
+		position: relative;
+		
+		&:before {
+			content: '';
+			left: -2em;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-image: url('../images/exit.svg');
+			background-size: contain;
+			margin-right: .5em;
+		}
+	}
+}
+
+section.about-section {
+	background: var(--primary-color);
+	color: #333333;
+	
+	h2 {
+		text-align: center;
+		color: #333333;
+		font-size: 2em;
+		margin-bottom: 3em;
+	}
+	
+	li {
+		background: #D6BA00;
+		text-align: center;
+		color: #333333;
+		padding: 2em 1em;
+		width: 80%;
+		margin: 0 auto 5em auto;
+		border-radius: 1em;
+		
+		img {
+			width: 10em;
+			height: 10em;
+			border: 10px solid #D6BA00;
+			border-radius: 50%;
+			margin-top: -4.5em;
+		}
+	}
+}
+
+section.contact-section {
+	background: #333333;
+	
+	h2 {
+		text-align: center;
+		color: var(--text-color);
+		font-size: 2em;
+	}
+	
+	label {
+		display: block;
+		color: var(--text-color);
+		margin-top: .5em;	
+	}
+	
+	input, textarea {
+		width: 100%;
+		padding: .8em;
+		margin-bottom: 1em;
+		border-radius: .3em;
+		border: 1px solid #CCCCCC;
+		box-sizing: border-box;
+	}
+	
+	input[type="submit"] {
+		background-color: var(--primary-color);
+		color: #333333;
+		font-weight: 500;
+		font-size: 1.3em;
+		border: none;
+		margin-bottom: 5em;
+		border-radius: 5em;
+		display: inline-block;
+		padding: .8em 2em;
+		width: unset;
+		cursor: pointer;
+	}
+	
+	iframe {
+		width: 100%;
+	}
+}
+
+section.footer-section {
+    background: var(--primary-color);
+    padding: 1em;
+	width: 100%;
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+	
+	.logo {
+        text-decoration: none;
+        font-weight: 100;
+        color: #333333;
+        font-size: 1.2em;
+
+        span {
+            color: #000000;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 300px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav {
+        display: flex;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: #CCCCCC;
+            font-size: 1em;
+            padding: .1em 1em;
+			
+			&:hover {
+				color: #FFFFFF;
+				font-weight: 500;
+			}
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.current a {
+            font-weight: 500;
+			color: var(--primary-color);
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero-section .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col {
+            margin: 3em 3em 0 5em;
+
+			.subhead {
+				font-size: 2em;
+				width: 60%;
+			}
+			
+			h1 {
+                font-size: 4em;
+                width: 90%;
+            }
+        }
+    }
+
+    .hero-img {
+        width: 30%;
+        margin-right: 8em;
+    }
+
+    .hero-cta {
+        display: flex;
+    }
+    .primary-cta {
+        margin-right: 1em;
+    }
+	
+	.products-section {
+		align-content: center;
+	}
+
+    .about-section ul {
+        display: flex;
+        
+        li {
+            margin: 0 1em;
+        }
+    }
+
+    .contact-section {
+        position: relative;
+
+        .container {
+            display: flex;
+        }
+    }
+
+    .contact-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+
+        iframe {
+            height: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
